@@ -10,7 +10,7 @@ describe('validateEmail', () => {
   it('should return false for an email address without a domain', () => {
     const result = validateEmail('jonatan@gmail');
     expect(result).toBe(false);
-  })
+  });
 
   it('should return false for an email missing the @ and second-level domain', () => {
     const result = validateEmail('jonatan.com');
